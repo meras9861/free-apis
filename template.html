@@ -22,19 +22,38 @@
         
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
         <script>
-            // JS
+            // JS              
             
             
-            $.ajax({
+           $.ajax({
                 url: 'https://api.publicapis.org/entries',
                 dataType: 'json',
                 success: function(data) {
+                    var itunesString = [];
+                    for (var i = iTunes.length; i > 0; i--){
+                        console.log(iTunes.entries[i]);
+                        var currentItune = iTunes.entries[i].itunesString;
+                        if(!iTunes.includes(currentitunesString)){
+                            itunesString += iTunes[i] + ", ";
+                            document.write(categoriesString);
+                    }
                     console.log(data);
                 }
-            });
-
+            },   
             
+                var = "search examples": [
+                    
+                    ];
+                var = "notes": [
+                    
+                    ];
+                var = "lookup examples": [
+                    ];
+            }
+            },
+  
             
+                 
         </script>
     </body>
 </html>
